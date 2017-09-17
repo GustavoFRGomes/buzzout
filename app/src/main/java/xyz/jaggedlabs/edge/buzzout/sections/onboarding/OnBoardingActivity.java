@@ -1,4 +1,4 @@
-package xyz.jaggedlabs.edge.buzzout.sections;
+package xyz.jaggedlabs.edge.buzzout.sections.onboarding;
 
 import android.os.Bundle;
 
@@ -15,5 +15,6 @@ public class OnBoardingActivity extends BaseActivity
     protected void onCreate(Bundle savedInstanceBundle)
     {
         super.onCreate(savedInstanceBundle);
+        this.pushFragment(OnBoardingFragment.newInstance());
     }
 }

@@ -10,4 +10,8 @@
     <string name="welcome_to_onboarding_title">Welcome to our on boarding!</string>
     <string name="welcome_to_onboarding_message">We need to ask you some things just to get you started on this self care journey. Please just be honest and we will do our best to help you.</string>
 
+    <string name="onboarding_start_button">Start</string>
+    <string name="onboarding_next_button">Next</string>
+    <string name="onboarding_finish_button">Finish</string>
+
 </resources>

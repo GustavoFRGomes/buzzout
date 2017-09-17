@@ -4,21 +4,16 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-    <!--
     <TextView
+        android:text="INITIAL FRAGMENT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/welcome_to_onboarding_title" />
+        android:gravity="center"/>
 
-    <TextView
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcome_to_onboarding_message" />
-
-    -->
-    <xyz.jaggedlabs.edge.buzzout.NonSwipeableViewPager
-        android:id="@+id/onboarding_view_pager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:text="@string/onboarding_start_button"/>
 
 </LinearLayout>
