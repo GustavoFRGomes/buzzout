@@ -3,14 +3,16 @@ package xyz.jaggedlabs.edge.buzzout;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.widget.TextView;
+import android.view.View;
+import android.widget.Button;
 
-public class MainBuzzoutActivity extends AppCompatActivity
+import xyz.jaggedlabs.edge.buzzout.sections.base.BaseActivity;
+
+public class MainBuzzoutActivity extends BaseActivity implements View.OnClickListener
 {
 
-    private TextView mTextMessage;
+    private Button onboardingButton;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener()
@@ -21,14 +23,14 @@ public class MainBuzzoutActivity extends AppCompatActivity
         {
             switch (item.getItemId())
             {
-                case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
+                case R.id.navigation_workout:
+                    onboardingButton.setText(R.string.title_workout);
                     return true;
-                case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
+                case R.id.navigation_calendar:
+                    onboardingButton.setText(R.string.title_calendar);
                     return true;
-                case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
+                case R.id.navigation_profile:
+                    onboardingButton.setText(R.string.title_profile);
                     return true;
             }
             return false;
@@ -42,9 +44,16 @@ public class MainBuzzoutActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buzzout);
 
-        mTextMessage = (TextView) findViewById(R.id.message);
+        onboardingButton = (Button) findViewById(R.id.center_button);
+        this.onboardingButton.setOnClickListener(this);
+
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 
+    @Override
+    public void onClick(View v)
+    {
+        this.pushActivity(MainBuzzoutActivity.class);
+    }
 }
