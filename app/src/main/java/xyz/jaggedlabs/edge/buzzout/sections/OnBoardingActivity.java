@@ -1,19 +1,19 @@
 package xyz.jaggedlabs.edge.buzzout.sections;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+
+import xyz.jaggedlabs.edge.buzzout.sections.base.BaseActivity;
 
 /**
- * Created by gustavogomes on 17/09/2017.
+ *   Gustavo Gomes on 17/09/2017.
  */
 
-public class OnboardingActivity extends AppCompatActivity
+public class OnBoardingActivity extends BaseActivity
 {
 
     @Override
     protected void onCreate(Bundle savedInstanceBundle)
     {
         super.onCreate(savedInstanceBundle);
-
     }
 }

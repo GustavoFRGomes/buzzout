@@ -6,4 +6,8 @@
     <string name="title_profile">Profile</string>
 
     <string name="temp_onboarding">OnBoarding</string>
+
+    <string name="welcome_to_onboarding_title">Welcome to our on boarding!</string>
+    <string name="welcome_to_onboarding_message">We need to ask you some things just to get you started on this self care journey. Please just be honest and we will do our best to help you.</string>
+
 </resources>

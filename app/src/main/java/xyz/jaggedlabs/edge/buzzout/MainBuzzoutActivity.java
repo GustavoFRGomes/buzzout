@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import xyz.jaggedlabs.edge.buzzout.sections.OnBoardingActivity;
 import xyz.jaggedlabs.edge.buzzout.sections.base.BaseActivity;
 
 public class MainBuzzoutActivity extends BaseActivity implements View.OnClickListener
@@ -54,6 +55,6 @@ public class MainBuzzoutActivity extends BaseActivity implements View.OnClickLis
     @Override
     public void onClick(View v)
     {
-        this.pushActivity(MainBuzzoutActivity.class);
+        this.pushHeaderlessActivity(OnBoardingActivity.class);
     }
 }
