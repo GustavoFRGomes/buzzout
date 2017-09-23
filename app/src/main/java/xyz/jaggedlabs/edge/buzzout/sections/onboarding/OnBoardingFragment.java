@@ -11,7 +11,7 @@ import xyz.jaggedlabs.edge.buzzout.ui.components.NonSwipeableViewPager;
 import xyz.jaggedlabs.edge.buzzout.R;
 
 /**
- * Created by gustavogomes on 17/09/2017.
+ * Gustavo Gomes on 17/09/2017.
  */
 
 public class OnBoardingFragment extends Fragment implements IOnOnboardingNavigationClicked
@@ -39,7 +39,7 @@ public class OnBoardingFragment extends Fragment implements IOnOnboardingNavigat
     }
 
     @Override
-    public void previousPage(int position)
+    public void previousPage(OnBoardingSteps position)
     {
         int currentItem = this.onBoardingViewPager.getCurrentItem();
 
@@ -56,7 +56,7 @@ public class OnBoardingFragment extends Fragment implements IOnOnboardingNavigat
     }
 
     @Override
-    public void nextPage(int position)
+    public void nextPage(OnBoardingSteps position)
     {
         int currentItem = this.onBoardingViewPager.getCurrentItem();
 

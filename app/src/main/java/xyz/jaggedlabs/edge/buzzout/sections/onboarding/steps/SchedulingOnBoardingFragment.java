@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import xyz.jaggedlabs.edge.buzzout.R;
 import xyz.jaggedlabs.edge.buzzout.sections.onboarding.IOnOnboardingNavigationClicked;
+import xyz.jaggedlabs.edge.buzzout.sections.onboarding.OnBoardingSteps;
 
 /**
  * Created by gustavogomes on 17/09/2017.
@@ -21,12 +22,19 @@ public class SchedulingOnBoardingFragment extends Fragment implements View.OnCli
         return new SchedulingOnBoardingFragment();
     }
 
+    private Button nextPageButton;
+    private Button previousPageButton;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstance)
     {
         View rootView = inflater.inflate(R.layout.fragment_onboarding_scheduling_page, parent, false);
 
-        ((Button) rootView.findViewById(R.id.next_button)).setOnClickListener(this);
+        this.nextPageButton = ((Button) rootView.findViewById(R.id.next_button));
+        this.nextPageButton.setOnClickListener(this);
+
+        this.previousPageButton = ((Button) rootView.findViewById(R.id.previous_button));
+        this.previousPageButton.setOnClickListener(this);
 
         return rootView;
     }
@@ -36,7 +44,14 @@ public class SchedulingOnBoardingFragment extends Fragment implements View.OnCli
     {
         if (this.getParentFragment() instanceof IOnOnboardingNavigationClicked)
         {
-            ((IOnOnboardingNavigationClicked) this.getParentFragment()).nextPage(0);
+            if (v.getId() == this.nextPageButton.getId())
+            {
+                ((IOnOnboardingNavigationClicked) this.getParentFragment()).nextPage(OnBoardingSteps.SCHEDULING_PAGE);
+            }
+            else if (v.getId() == this.previousPageButton.getId())
+            {
+                ((IOnOnboardingNavigationClicked) this.getParentFragment()).previousPage(OnBoardingSteps.SCHEDULING_PAGE);
+            }
         }
     }
 }

@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import xyz.jaggedlabs.edge.buzzout.R;
 import xyz.jaggedlabs.edge.buzzout.sections.onboarding.IOnOnboardingNavigationClicked;
+import xyz.jaggedlabs.edge.buzzout.sections.onboarding.OnBoardingSteps;
 
 /**
  * Created by gustavogomes on 17/09/2017.
@@ -45,11 +46,11 @@ public class PersonalInfoOnBoardingFragment extends Fragment implements View.OnC
         {
             if (v.getId() == this.nextPageButton.getId())
             {
-                ((IOnOnboardingNavigationClicked) this.getParentFragment()).nextPage(1);
+                ((IOnOnboardingNavigationClicked) this.getParentFragment()).nextPage(OnBoardingSteps.PERSONAL_INFO);
             }
             else if (v.getId() == this.previousPageButton.getId())
             {
-                ((IOnOnboardingNavigationClicked) this.getParentFragment()).previousPage(1);
+                ((IOnOnboardingNavigationClicked) this.getParentFragment()).previousPage(OnBoardingSteps.PERSONAL_INFO);
             }
         }
     }

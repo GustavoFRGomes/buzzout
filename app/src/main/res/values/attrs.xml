@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HorizontalTabbedLayout">
+        <attr name="tab_background" format="reference" />
+        <attr name="tabs_textAllCaps" format="boolean" />
+        <attr name="tabs_textColor" format="color|reference" />
+        <attr name="tabs_textSize" format="dimension" />
+        <attr name="tabs_horizontalPadding" format="dimension" />
+        <attr name="tabs_textMinWidth" format="dimension" />
+        <attr name="tabs_distributeEvenly" format="boolean" />
+        <attr name="tabs_clickable" format="boolean" />
+        <attr name="tabs_titleOffset" format="dimension" />
+    </declare-styleable>
+</resources>

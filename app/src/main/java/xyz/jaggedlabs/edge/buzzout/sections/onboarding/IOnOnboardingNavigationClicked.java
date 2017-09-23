@@ -6,6 +6,6 @@ package xyz.jaggedlabs.edge.buzzout.sections.onboarding;
 
 public interface IOnOnboardingNavigationClicked
 {
-    void previousPage(int position);
-    void nextPage(int position);
+    void previousPage(OnBoardingSteps stepPosition);
+    void nextPage(OnBoardingSteps stepPosition);
 }
