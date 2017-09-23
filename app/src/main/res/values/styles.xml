@@ -15,4 +15,13 @@
         <item name="android:textColorHint">@color/white</item>
     </style>
 
+    <style name="OnBoardingTextLight">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/regular_text_size</item>
+    </style>
+
+    <style name="OnBoardingTextLight.Title">
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+
 </resources>

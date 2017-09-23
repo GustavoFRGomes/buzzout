@@ -5,20 +5,30 @@
     <string name="title_calendar">Schedule</string>
     <string name="title_profile">Profile</string>
 
+    <!-- ONBOARDING -->
     <string name="temp_onboarding">OnBoarding</string>
-
-    <string name="welcome_to_onboarding_title">Welcome to our on boarding!</string>
-    <string name="welcome_to_onboarding_message">We need to ask you some things just to get you started on this self care journey. Please just be honest and we will do our best to help you.</string>
 
     <string name="onboarding_start_button">Start</string>
     <string name="onboarding_previous_button">Previous</string>
     <string name="onboarding_next_button">Next</string>
     <string name="onboarding_finish_button">Finish</string>
 
+    <string name="onboarding_initial_welcome_title">Welcome to your Buzzout app!</string>
+    <string name="onboarding_initial_presentation">You are beginning the on boarding process to enhance your journey. We will ask for your help to collect some information that will enable us to set up the environment for you to interact without any hassle.</string>
+
     <string name="onboarding_info_request_title">We will need some information, can you help us fill in the gaps?</string>
     <string name="onboarding_info_name">What\'s your name?</string>
     <string name="onboarding_info_age">What\'s your age?</string>
 
+    <string name="onboarding_weight_title">We now would like to know some information regarding your weight, can you help?</string>
+    <string name="onboarding_weight_input">How much do you weight?</string>
+
+    <string name="onboarding_workout_title">When do you think you can workout?</string>
+
+    <string name="onboarding_final_title">That is it!</string>
+    <string name="onboarding_final_thank_you">Thank you very much for your patience and rest assured that every second you spent counted! We will give the app a personal touch so you can feel more comfortable within it! :)</string>
+
     <string name="accessibility_onboarding_close_button">On Boarding close button.</string>
+    <!-- END ONBOARDING -->
 
 </resources>

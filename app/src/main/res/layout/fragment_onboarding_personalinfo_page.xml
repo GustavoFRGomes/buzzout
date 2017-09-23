@@ -10,8 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_medium"
-        android:textColor="@color/white"
-        android:gravity="center"/>
+        android:gravity="center"
+        style="@style/OnBoardingTextLight.Title"/>
 
     <!--  Name Label -->
     <android.support.design.widget.TextInputLayout
@@ -25,7 +25,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textAutoComplete"
-            android:hint="@string/onboarding_info_name"/>
+            android:hint="@string/onboarding_info_name"
+            style="@style/OnBoardingTextLight"/>
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -39,7 +40,8 @@
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:inputType="number"
-                  android:hint="@string/onboarding_info_age" />
+                  android:hint="@string/onboarding_info_age"
+                  style="@style/OnBoardingTextLight"/>
     </android.support.design.widget.TextInputLayout>
 
     <LinearLayout

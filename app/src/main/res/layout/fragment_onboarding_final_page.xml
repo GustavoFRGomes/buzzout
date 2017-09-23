@@ -1,19 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/onboarding_background_gradient">
 
     <TextView
-        android:text="FINAL FRAGMENT"
+        android:text="@string/onboarding_final_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"/>
+        android:layout_margin="@dimen/margin_medium"
+        android:gravity="center"
+        style="@style/OnBoardingTextLight.Title"/>
 
-    <Button
-        android:id="@+id/next_button"
-        android:layout_width="wrap_content"
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/onboarding_finish_button"/>
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:text="@string/onboarding_final_thank_you"
+        android:gravity="center_horizontal"
+        style="@style/OnBoardingTextLight"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/previous_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:text="@string/onboarding_previous_button" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="2" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:text="@string/onboarding_finish_button"/>
+
+    </LinearLayout>
 
 </LinearLayout>
