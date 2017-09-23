@@ -16,7 +16,7 @@
         android:text="@string/welcome_to_onboarding_message" />
 
     -->
-    <xyz.jaggedlabs.edge.buzzout.NonSwipeableViewPager
+    <xyz.jaggedlabs.edge.buzzout.ui.components.NonSwipeableViewPager
         android:id="@+id/onboarding_view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

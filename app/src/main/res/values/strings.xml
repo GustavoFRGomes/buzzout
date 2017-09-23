@@ -11,7 +11,14 @@
     <string name="welcome_to_onboarding_message">We need to ask you some things just to get you started on this self care journey. Please just be honest and we will do our best to help you.</string>
 
     <string name="onboarding_start_button">Start</string>
+    <string name="onboarding_previous_button">Previous</string>
     <string name="onboarding_next_button">Next</string>
     <string name="onboarding_finish_button">Finish</string>
+
+    <string name="onboarding_info_request_title">We will need some information, can you help us fill in the gaps?</string>
+    <string name="onboarding_info_name">What\'s your name?</string>
+    <string name="onboarding_info_age">What\'s your age?</string>
+
+    <string name="accessibility_onboarding_close_button">On Boarding close button.</string>
 
 </resources>

@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import xyz.jaggedlabs.edge.buzzout.R;
-import xyz.jaggedlabs.edge.buzzout.sections.onboarding.IOnNextClicked;
+import xyz.jaggedlabs.edge.buzzout.sections.onboarding.IOnOnboardingNavigationClicked;
 
 /**
  * Created by gustavogomes on 17/09/2017.
@@ -21,12 +21,19 @@ public class PersonalInfoOnBoardingFragment extends Fragment implements View.OnC
         return new PersonalInfoOnBoardingFragment();
     }
 
+    private Button nextPageButton;
+    private Button previousPageButton;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstanceState)
     {
         View rootView = inflater.inflate(R.layout.fragment_onboarding_personalinfo_page, parent, false);
 
-        ((Button) rootView.findViewById(R.id.next_button)).setOnClickListener(this);
+        this.nextPageButton = ((Button) rootView.findViewById(R.id.next_button));
+        this.nextPageButton.setOnClickListener(this);
+
+        this.previousPageButton = ((Button) rootView.findViewById(R.id.previous_button));
+        this.previousPageButton.setOnClickListener(this);
 
         return rootView;
     }
@@ -34,9 +41,16 @@ public class PersonalInfoOnBoardingFragment extends Fragment implements View.OnC
     @Override
     public void onClick(View v)
     {
-        if (this.getParentFragment() instanceof IOnNextClicked)
+        if (this.getParentFragment() instanceof IOnOnboardingNavigationClicked)
         {
-            ((IOnNextClicked) this.getParentFragment()).nextPage(1);
+            if (v.getId() == this.nextPageButton.getId())
+            {
+                ((IOnOnboardingNavigationClicked) this.getParentFragment()).nextPage(1);
+            }
+            else if (v.getId() == this.previousPageButton.getId())
+            {
+                ((IOnOnboardingNavigationClicked) this.getParentFragment()).previousPage(1);
+            }
         }
     }
 }

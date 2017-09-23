@@ -1,4 +1,4 @@
-package xyz.jaggedlabs.edge.buzzout;
+package xyz.jaggedlabs.edge.buzzout.ui.components;
 
 import android.content.Context;
 import android.support.v4.view.ViewPager;

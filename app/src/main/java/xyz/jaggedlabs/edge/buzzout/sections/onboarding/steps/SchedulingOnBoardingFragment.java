@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import xyz.jaggedlabs.edge.buzzout.R;
-import xyz.jaggedlabs.edge.buzzout.sections.onboarding.IOnNextClicked;
+import xyz.jaggedlabs.edge.buzzout.sections.onboarding.IOnOnboardingNavigationClicked;
 
 /**
  * Created by gustavogomes on 17/09/2017.
@@ -34,9 +34,9 @@ public class SchedulingOnBoardingFragment extends Fragment implements View.OnCli
     @Override
     public void onClick(View v)
     {
-        if (this.getParentFragment() instanceof IOnNextClicked)
+        if (this.getParentFragment() instanceof IOnOnboardingNavigationClicked)
         {
-            ((IOnNextClicked) this.getParentFragment()).nextPage(0);
+            ((IOnOnboardingNavigationClicked) this.getParentFragment()).nextPage(0);
         }
     }
 }

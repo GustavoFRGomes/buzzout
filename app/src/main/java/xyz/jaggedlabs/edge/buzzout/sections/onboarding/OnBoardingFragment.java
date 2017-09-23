@@ -3,19 +3,18 @@ package xyz.jaggedlabs.edge.buzzout.sections.onboarding;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import xyz.jaggedlabs.edge.buzzout.NonSwipeableViewPager;
+import xyz.jaggedlabs.edge.buzzout.ui.components.NonSwipeableViewPager;
 import xyz.jaggedlabs.edge.buzzout.R;
 
 /**
  * Created by gustavogomes on 17/09/2017.
  */
 
-public class OnBoardingFragment extends Fragment implements IOnNextClicked
+public class OnBoardingFragment extends Fragment implements IOnOnboardingNavigationClicked
 {
     public static OnBoardingFragment newInstance()
     {
@@ -37,6 +36,23 @@ public class OnBoardingFragment extends Fragment implements IOnNextClicked
         onBoardingViewPager.setPagingEnabled(false);
 
         return rootView;
+    }
+
+    @Override
+    public void previousPage(int position)
+    {
+        int currentItem = this.onBoardingViewPager.getCurrentItem();
+
+        if (currentItem - 1 < 0)
+        {
+            currentItem = this.onBoardingViewPager.getAdapter().getCount() - 1;
+        }
+        else
+        {
+            currentItem--;
+        }
+
+        this.onBoardingViewPager.setCurrentItem(currentItem);
     }
 
     @Override
