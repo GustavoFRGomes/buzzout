@@ -22,6 +22,13 @@
 
     <string name="onboarding_weight_title">We now would like to know some information regarding your weight, can you help?</string>
     <string name="onboarding_weight_input">How much do you weight?</string>
+    <string name="onboarding_weight_in_title">Please select how periodic you want the weight ins to be:</string>
+    <string name="onboarding_weight_in_daily">Daily</string>
+    <string name="onboarding_weight_in_weekly">Weekly</string>
+    <string name="onboarding_weight_in_monthly">Monthly</string>
+    <string name="onboarding_weight_in_x_days_i">every</string>
+    <string name="onboarding_weight_in_x_days_ii">days</string>
+    <string name="onboarding_weight_in_x_days_empty">(can\'t be empty)</string>
 
     <string name="onboarding_workout_title">When do you think you can workout?</string>
 

@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#bb4d00</color>
     <color name="colorAccent">#ffad42</color>
 
+    <color name="error_on_boarding">#D22421</color>
+
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
 </resources>

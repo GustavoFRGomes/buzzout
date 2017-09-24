@@ -31,6 +31,85 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/onboarding_weight_in_title"
+            style="@style/OnBoardingTextLight"/>
+
+        <CheckBox
+            android:id="@+id/weight_in_daily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/onboarding_weight_in_daily"
+            style="@style/OnBoardingTextLight"/>
+        <CheckBox
+            android:id="@+id/weight_in_weekly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/onboarding_weight_in_weekly"
+            style="@style/OnBoardingTextLight"/>
+        <CheckBox
+            android:id="@+id/weight_in_monthly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/onboarding_weight_in_monthly"
+            style="@style/OnBoardingTextLight"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/weight_in_x_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                style="@style/OnBoardingTextLight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/onboarding_weight_in_x_days_i"
+                style="@style/OnBoardingTextLight"/>
+            <EditText
+                android:id="@+id/x_days_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="x"
+                android:inputType="number"
+                style="@style/OnBoardingTextLight"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/onboarding_weight_in_x_days_ii"
+                style="@style/OnBoardingTextLight"/>
+
+            <TextView
+                android:id="@+id/empty_value_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3sp"
+                style="@style/OnBoardingTextLight"
+                android:textColor="@color/error_on_boarding"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Button
