@@ -16,16 +16,206 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:layout_marginBottom="@dimen/margin_xsmall"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:orientation="horizontal" >
 
-        <TableLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:text="@string/onboarding_workout_schedule_today"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/margin_medium"
-            android:layout_marginLeft="@dimen/margin_medium"
-            android:layout_marginBottom="@dimen/margin_medium">
+            android:layout_weight=".15"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            style="@style/OnBoardingTextLight"/>
 
-        </TableLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/todays_schedule_line"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_add_white_24dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_xsmall"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:text="@string/onboarding_workout_schedule_tuesday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:gravity="center_horizontal"
+            style="@style/OnBoardingTextLight"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/in1days_schedule_line"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_white_24dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_xsmall"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:text="@string/onboarding_workout_schedule_wednesday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:gravity="center_horizontal"
+            style="@style/OnBoardingTextLight"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/in2days_schedule_line"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_white_24dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_xsmall"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:text="@string/onboarding_workout_schedule_thursday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:gravity="center_horizontal"
+            style="@style/OnBoardingTextLight"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/in3days_schedule_line"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_white_24dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_xsmall"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:text="@string/onboarding_workout_schedule_friday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:gravity="center_horizontal"
+            style="@style/OnBoardingTextLight"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/in4days_schedule_line"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_white_24dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_xsmall"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:text="@string/onboarding_workout_schedule_saturday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:gravity="center_horizontal"
+            style="@style/OnBoardingTextLight"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/in5days_schedule_line"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_white_24dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:text="@string/onboarding_workout_schedule_sunday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:gravity="center_horizontal"
+            style="@style/OnBoardingTextLight"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/in6days_schedule_line"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"/>
+
+        <ImageView
+            android:id="@+id/in6days_add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_white_24dp"/>
 
     </LinearLayout>
 

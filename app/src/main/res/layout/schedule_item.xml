@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xyz.jaggedlabs.edge.buzzout.ui.components.RoundedCornersLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    app:radius_size="12dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_medium"
+        android:paddingBottom="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_small"
+        android:paddingLeft="@dimen/margin_small" >
+
+        <TextView
+            android:id="@+id/schedule_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/OnBoardingTextLight" />
+        <TextView
+            android:id="@+id/schedule_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_xsmall"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12sp"
+            style="@style/OnBoardingTextLight"/>
+
+    </LinearLayout>
+
+</xyz.jaggedlabs.edge.buzzout.ui.components.RoundedCornersLayout>

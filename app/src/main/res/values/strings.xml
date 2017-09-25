@@ -14,11 +14,12 @@
     <string name="onboarding_finish_button">Finish</string>
 
     <string name="onboarding_initial_welcome_title">Welcome to your Buzzout app!</string>
-    <string name="onboarding_initial_presentation">You are beginning the on boarding process to enhance your journey. We will ask for your help to collect some information that will enable us to set up the environment for you to interact without any hassle.</string>
+    <string name="onboarding_initial_presentation">You are beginning the on boarding process to enhance your journey. We will ask for your help to collect some information to will enable us to set up the environment the best environment for your needs.</string>
 
     <string name="onboarding_info_request_title">We will need some information, can you help us fill in the gaps?</string>
     <string name="onboarding_info_name">What\'s your name?</string>
     <string name="onboarding_info_age">What\'s your age?</string>
+    <string name="onboarding_info_gender">What\'s your gender?</string>
 
     <string name="onboarding_weight_title">We now would like to know some information regarding your weight, can you help?</string>
     <string name="onboarding_weight_input">How much do you weight?</string>
@@ -31,6 +32,14 @@
     <string name="onboarding_weight_in_x_days_empty">(can\'t be empty)</string>
 
     <string name="onboarding_workout_title">When do you think you can workout?</string>
+    <string name="onboarding_workout_schedule_today">Today</string>
+    <string name="onboarding_workout_schedule_monday">Mon</string>
+    <string name="onboarding_workout_schedule_tuesday">Tues</string>
+    <string name="onboarding_workout_schedule_wednesday">Wed</string>
+    <string name="onboarding_workout_schedule_thursday">Thurs</string>
+    <string name="onboarding_workout_schedule_friday">Fri</string>
+    <string name="onboarding_workout_schedule_saturday">Sat</string>
+    <string name="onboarding_workout_schedule_sunday">Sun</string>
 
     <string name="onboarding_final_title">That is it!</string>
     <string name="onboarding_final_thank_you">Thank you very much for your patience and rest assured that every second you spent counted! We will give the app a personal touch so you can feel more comfortable within it! :)</string>

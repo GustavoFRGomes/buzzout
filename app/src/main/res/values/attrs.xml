@@ -11,4 +11,7 @@
         <attr name="tabs_clickable" format="boolean" />
         <attr name="tabs_titleOffset" format="dimension" />
     </declare-styleable>
+    <declare-styleable name="RoundedCornersLayout">
+        <attr name="radius_size" format="dimension" />
+    </declare-styleable>
 </resources>
